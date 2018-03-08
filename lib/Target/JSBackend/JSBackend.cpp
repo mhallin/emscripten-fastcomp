@@ -489,7 +489,7 @@ namespace {
       // we have which allows unaligned func the one risk is if someone forces a
       // function to be aligned, and relies on that. Could do F->getAlignment()
       // instead.
-      unsigned Alignment = 1;
+      unsigned Alignment = 4;
       while (Table.size() % Alignment) Table.push_back("0");
       unsigned Index = Table.size();
       // add the name to the table. normally we can just add the function itself,
